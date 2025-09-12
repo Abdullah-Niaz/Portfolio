@@ -1,1 +1,58 @@
+/* FILE: src/index.css */
 @import "tailwindcss";
+
+:root {
+  --bg-1: #0f172a; /* slate-900 */
+  --card-bg: rgba(255, 255, 255, 0.04);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gradient-to-br from-[#071024] via-[#081229] to-[#02111b] text-white antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+}
+
+/* animated gradient background helper */
+.gradient-animate {
+  background: linear-gradient(270deg, #0ea5e9, #8b5cf6, #06b6d4, #7c3aed);
+  background-size: 800% 800%;
+  animation: gradient-x 12s ease infinite;
+}
+
+/* glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* neon button */
+.btn-neon {
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.08);
+}
+
+/* footer link hover */
+.social-hover:hover {
+  transform: translateY(-3px);
+}
+
+/* small helper for section padding */
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* responsive grid fix for project images */
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}

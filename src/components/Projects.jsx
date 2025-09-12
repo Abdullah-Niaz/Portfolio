@@ -1,45 +1,150 @@
-import React from "react";
+// src/components/Projects.jsx
+import { motion } from "framer-motion";
+import { FaCode, FaGamepad, FaMobileAlt, FaDatabase, FaChartLine } from "react-icons/fa";
 
-const projects = [
-  {
-    title: "Twiky",
-    desc: "A social tool for sharing quick thoughts.",
-    tech: ["React", "CSS"],
-    link: "https://github.com/Abdullah-Niaz/Twiky",
-  },
-  {
-    title: "Game Development CPP",
-    desc: "C++ racing game avoiding obstacles.",
-    tech: ["C++"],
-    link: "https://github.com/Abdullah-Niaz/Game_Development_CPP",
-  },
-  {
-    title: "Finance Learning Assistant",
-    desc: "AI-powered finance learning app.",
-    tech: ["Python", "Streamlit"],
-    link: "#",
-  },
-];
+const projects = {
+  "Web Development": [
+    {
+      title: "Animated Modern Website (GSAP)",
+      link: "https://abdullah-niaz.github.io/Animated_Moden_Website_With_GSAP/",
+      desc: "Interactive website using GSAP animations for smooth scrolling and transitions.",
+    },
+    {
+      title: "BMI Calculator",
+      link: "https://abdullah-niaz.github.io/BMI_Calculator/",
+      desc: "Simple health tool for calculating BMI with instant feedback.",
+    },
+    {
+      title: "ToDo List App",
+      link: "https://abdullah-niaz.github.io/ToDo-List/",
+      desc: "Task management app built with clean UI and local storage.",
+    },
+    {
+      title: "Gym Website",
+      link: "https://github.com/Abdullah-Niaz/gym_website",
+      desc: "Static responsive gym landing page with modern design.",
+    },
+    {
+      title: "Comments Feature App",
+      link: "https://comments-feature.vercel.app/",
+      desc: "Full-stack feature for adding and managing comments (React + Backend).",
+    },
+    {
+      title: "Git Language Stats",
+      link: "https://git-lang-stats.vercel.app/",
+      desc: "Fetches and visualizes GitHub repo language stats.",
+    },
+  ],
+  "Game Development": [
+    {
+      title: "C++ Car Racing Game",
+      link: "https://github.com/Abdullah-Niaz/Game_Development_CPP/blob/master/Car_Game.cpp",
+      desc: "Console-based racing game where players avoid obstacles and score points.",
+    },
+  ],
+  "Mobile & App Development": [
+    {
+      title: "NotesApp (Firebase)",
+      link: "https://github.com/Abdullah-Niaz/notesapp-firebase",
+      desc: "Cross-platform notes app using Firebase backend.",
+    },
+    {
+      title: "NotesApp (Local)",
+      link: "https://github.com/Abdullah-Niaz/NotesApp",
+      desc: "Lightweight offline notes application.",
+    },
+    {
+      title: "SQLite Student App",
+      link: "https://github.com/Abdullah-Niaz/SQLiteStudentApp",
+      desc: "Student management app using SQLite for persistence.",
+    },
+    {
+      title: "Firebase Student App",
+      link: "https://github.com/Abdullah-Niaz/FirebaseStudentApp",
+      desc: "App for managing student data with Firebase backend.",
+    },
+  ],
+  "Software / System Projects": [
+    {
+      title: "Course Allocation App",
+      link: "https://github.com/Abdullah-Niaz/CourseAllocationApp",
+      desc: "Automates course allocations for students.",
+    },
+    {
+      title: "Feedback App",
+      link: "https://github.com/Abdullah-Niaz/Feedback_APP",
+      desc: "Collects and manages user feedback.",
+    },
+    {
+      title: "CRUD Operations (Django)",
+      link: "https://github.com/Abdullah-Niaz/CRUD-Operations-Django",
+      desc: "Django app demonstrating Create, Read, Update, Delete.",
+    },
+  ],
+  "Data Science / Machine Learning": [
+    {
+      title: "Placement Prediction (Logistic Regression)",
+      link: "https://github.com/Abdullah-Niaz/placement-project-logistic-regression",
+      desc: "Machine learning model to predict student placement outcomes.",
+    },
+    {
+      title: "DIP Lab Work (Digital Image Processing)",
+      link: "https://github.com/Abdullah-Niaz/DIP-LabWork",
+      desc: "Assignments and experiments in image processing.",
+    },
+  ],
+};
+
+const categoryIcons = {
+  "Web Development": <FaCode className="text-blue-400 text-3xl" />,
+  "Game Development": <FaGamepad className="text-pink-400 text-3xl" />,
+  "Mobile & App Development": <FaMobileAlt className="text-green-400 text-3xl" />,
+  "Software / System Projects": <FaDatabase className="text-yellow-400 text-3xl" />,
+  "Data Science / Machine Learning": <FaChartLine className="text-purple-400 text-3xl" />,
+};
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-cyan-400 mb-10 text-center">Projects</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((proj, i) => (
-            <div key={i} className="bg-gray-800 p-6 rounded-lg shadow hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
-              <p className="text-gray-400 mb-4">{proj.desc}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {proj.tech.map((t, j) => (
-                  <span key={j} className="px-2 py-1 bg-gray-700 text-sm rounded">{t}</span>
-                ))}
-              </div>
-              <a href={proj.link} className="text-cyan-400 hover:underline">View Code</a>
+    <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white" id="projects">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.h2
+          className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          🚀 Projects Showcase
+        </motion.h2>
+
+        {Object.keys(projects).map((category, idx) => (
+          <div key={idx} className="mb-16">
+            <div className="flex flex-row items-center  justify-center gap-3 mb-8">
+              {categoryIcons[category]}
+              <h3 className="text-2xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                {category}
+              </h3>
             </div>
-          ))}
-        </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects[category].map((proj, index) => (
+                <motion.a
+                  key={index}
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-6 rounded-xl bg-gradient-to-tr from-gray-800 to-gray-900 shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-500"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
+                >
+                  <h4 className="text-lg font-semibold mb-2">{proj.title}</h4>
+                  <p className="text-gray-300 text-sm">{proj.desc}</p>
+                </motion.a>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
