@@ -103,7 +103,7 @@ const categories = [
 
 const Skills = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+    <section id="skills" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
