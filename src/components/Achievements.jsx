@@ -27,7 +27,7 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section id="achievements" className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2
           className="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
