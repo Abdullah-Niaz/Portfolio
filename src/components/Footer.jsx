@@ -12,7 +12,7 @@ export default function Footer(){
         <div className="flex gap-4 items-center">
           <a href="https://github.com/Abdullah-Niaz" className="social-hover"><FaGithub size={20} /></a>
           <a href="https://linkedin.com" className="social-hover"><FaLinkedin size={20} /></a>
-          <a href="mailto:abdullah@example.com" className="social-hover"><FaEnvelope size={20} /></a>
+          <a href="mailto:abdullah423@gmail.com" className="social-hover"><FaEnvelope size={20} /></a>
         </div>
       </div>
     </footer>
