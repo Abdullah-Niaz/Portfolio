@@ -15,8 +15,8 @@ export default function Contact(){
           </form>
 
           <div className="mt-6 text-gray-300">
-            <div>Email: <a href="mailto:abdullahniaz423@gmail.com" className="text-cyan-300">abdullah@example.com</a></div>
-            <div className="mt-2">Location: Pakistan</div>
+            <div>Email: <a href="mailto:abdullahniaz423@gmail.com" className="text-cyan-300">abdullahniaz423@gmail.com</a></div>
+            <div className="mt-2">Location: Chak No 362/WB, Dunyapur, Lodhran, Punjab, Pakistan</div>
           </div>
         </div>
       </div>
