@@ -10,9 +10,9 @@ export default function Footer(){
           <div className="text-gray-300">© {new Date().getFullYear()} Abdullah Niaz</div>
         </div>
         <div className="flex gap-4 items-center">
-          <a href="https://github.com/Abdullah-Niaz" className="social-hover"><FaGithub size={20} /></a>
-          <a href="https://linkedin.com" className="social-hover"><FaLinkedin size={20} /></a>
-          <a href="mailto:abdullah423@gmail.com" className="social-hover"><FaEnvelope size={20} /></a>
+          <a href="https://github.com/Abdullah-Niaz" target="_blank" className="social-hover"><FaGithub size={20} /></a>
+          <a href="https://linkedin.com/in/abdullah-niaz"  target="_blank" className="social-hover"><FaLinkedin size={20} /></a>
+          <a href="mailto:abdullah423@gmail.com" target="_blank"className="social-hover"><FaEnvelope size={20} /></a>
         </div>
       </div>
     </footer>
