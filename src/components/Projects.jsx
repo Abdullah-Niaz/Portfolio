@@ -1,9 +1,9 @@
 // src/components/Projects.jsx
 import { motion } from "framer-motion";
-import { FaCode, FaGamepad, FaMobileAlt, FaDatabase, FaChartLine } from "react-icons/fa";
-
+import { FaCode, FaGamepad, FaMobileAlt, FaDatabase, FaChartLine} from "react-icons/fa";
+import { SiDjango } from "react-icons/si";
 const projects = {
-  "Web Development": [
+  "HTML/CSS/JS": [
     {
       title: "Animated Modern Website (GSAP)",
       link: "https://abdullah-niaz.github.io/Animated_Moden_Website_With_GSAP/",
@@ -20,9 +20,16 @@ const projects = {
       desc: "Task management app built with clean UI and local storage.",
     },
     {
-      title: "Gym Website",
-      link: "https://github.com/Abdullah-Niaz/gym_website",
-      desc: "Static responsive gym landing page with modern design.",
+      title: "Git Language Stats",
+      link: "https://git-lang-stats.vercel.app/",
+      desc: "Fetches and visualizes GitHub repo language stats.",
+    },
+  ],
+  "Python-Django": [
+    {
+      title: "Course Allocation App",
+      link: "https://github.com/Abdullah-Niaz/CourseAllocationApp",
+      desc: "Automates course allocations for students.",
     },
     {
       title: "Comments Feature App",
@@ -30,16 +37,51 @@ const projects = {
       desc: "Full-stack feature for adding and managing comments (React + Backend).",
     },
     {
-      title: "Git Language Stats",
-      link: "https://git-lang-stats.vercel.app/",
-      desc: "Fetches and visualizes GitHub repo language stats.",
+      title: "Feedback App",
+      link: "https://github.com/Abdullah-Niaz/Feedback_APP",
+      desc: "Collects and manages user feedback.",
+    },
+     {
+      title: "Gym Website",
+      link: "https://github.com/Abdullah-Niaz/gym_website",
+      desc: "Static responsive gym landing page with modern design.",
+    },
+    {
+      title: "CRUD Operations (Django)",
+      link: "https://github.com/Abdullah-Niaz/CRUD-Operations-Django",
+      desc: "Django app demonstrating Create, Read, Update, Delete.",
     },
   ],
-  "Game Development": [
+  "MERN Stack": [
     {
-      title: "C++ Car Racing Game",
-      link: "https://github.com/Abdullah-Niaz/Game_Development_CPP/blob/master/Car_Game.cpp",
-      desc: "Console-based racing game where players avoid obstacles and score points.",
+      title: "Project 1",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
+    },
+    {
+      title: "Project 2",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
+    },
+    {
+      title: "Project 3",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
+    },
+    {
+      title: "Project 4",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
+    },
+    {
+      title: "Project 5",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
+    },
+    {
+      title: "Project 5",
+      link: "https://github.com/Abdullah-Niaz",
+      desc: "lorem ipsum ..........................................................",
     },
   ],
   "Mobile & App Development": [
@@ -64,23 +106,7 @@ const projects = {
       desc: "App for managing student data with Firebase backend.",
     },
   ],
-  "Software / System Projects": [
-    {
-      title: "Course Allocation App",
-      link: "https://github.com/Abdullah-Niaz/CourseAllocationApp",
-      desc: "Automates course allocations for students.",
-    },
-    {
-      title: "Feedback App",
-      link: "https://github.com/Abdullah-Niaz/Feedback_APP",
-      desc: "Collects and manages user feedback.",
-    },
-    {
-      title: "CRUD Operations (Django)",
-      link: "https://github.com/Abdullah-Niaz/CRUD-Operations-Django",
-      desc: "Django app demonstrating Create, Read, Update, Delete.",
-    },
-  ],
+  
   "Data Science / Machine Learning": [
     {
       title: "Placement Prediction (Logistic Regression)",
@@ -97,9 +123,9 @@ const projects = {
 
 const categoryIcons = {
   "Web Development": <FaCode className="text-blue-400 text-3xl" />,
-  "Game Development": <FaGamepad className="text-pink-400 text-3xl" />,
-  "Mobile & App Development": <FaMobileAlt className="text-green-400 text-3xl" />,
-  "Software / System Projects": <FaDatabase className="text-yellow-400 text-3xl" />,
+  "Python-Django": <SiDjango className="text-green-400 text-3xl" />,
+  "MERN Stack": <FaCode className="text-yellow-400 text-3xl" />,
+  "Mobile & App Development": <FaMobileAlt className="text-blue-400 text-3xl" />,
   "Data Science / Machine Learning": <FaChartLine className="text-purple-400 text-3xl" />,
 };
 
