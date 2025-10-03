@@ -15,6 +15,8 @@ import {
   FaWindows,
   FaWordpress,
   FaAws,
+  FaJava, 
+  FaDocker,
 } from "react-icons/fa";
 import { SiTailwindcss, SiDjango, SiFlask, SiMongodb, SiPostgresql, SiMysql, SiPandas, SiNumpy, SiOpencv, SiFlutter, SiKotlin, SiShopify } from "react-icons/si";
 
@@ -32,6 +34,7 @@ const categories = [
       { name: "Express.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "Django", icon: <SiDjango className="text-green-700" /> },
       { name: "Flask", icon: <SiFlask className="text-gray-300" /> },
+      { name: "REST APIs", icon: <FaDatabase className="text-green-400" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
       { name: "SQL / MySQL", icon: <SiMysql className="text-blue-600" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-sky-600" /> },
@@ -41,8 +44,9 @@ const categories = [
   {
     title: "App Development",
     skills: [
-      { name: "Dart", icon: <SiFlutter className="text-sky-400" /> },
+      { name: "Java", icon: <FaJava  className="text-blue-400" /> },
       { name: "Kotlin", icon: <SiKotlin className="text-purple-400" /> },
+      { name: "Dart", icon: <SiFlutter className="text-sky-400" /> },
       { name: "Flutter", icon: <SiFlutter className="text-sky-400" /> },
     
     ],
@@ -58,6 +62,8 @@ const categories = [
       { name: "Cufflinks", icon: <FaDatabase className="text-purple-400" /> },
       { name: "OpenCV", icon: <SiOpencv className="text-red-400" /> },
       { name: "MATLAB", icon: <FaDatabase className="text-orange-400" /> },
+      { name: "Feature Engineering", icon: <FaDatabase className="text-pink-500" /> },
+
       { name: "EDA / ML", icon: <FaDatabase className="text-green-300" /> },
     ],
   },
@@ -84,6 +90,7 @@ const categories = [
       { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
       { name: "VS Code", icon: <FaDatabase className="text-blue-500" /> },
       { name: "Jupyter Notebook", icon: <FaDatabase className="text-orange-400" /> },
+      { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
       { name: "Linux", icon: <FaLinux className="text-yellow-400" /> },
       { name: "Windows", icon: <FaWindows className="text-blue-500" /> },
       { name: "DOS / DOSBox", icon: <FaDatabase className="text-gray-400" /> },
