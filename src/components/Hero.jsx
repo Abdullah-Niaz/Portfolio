@@ -19,7 +19,7 @@ export default function Hero(){
         </motion.p>
 
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5}} className="mt-8 flex flex-wrap gap-4 justify-center">
-          <a href="/resume.pdf" className="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-lg btn-neon">Download Resume</a>
+          <a href="/Portfolio/resume/Abdullah_Niaz_Resume.pdf" download  className="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-lg btn-neon">Download Resume</a>
           <a href="#projects" className="px-6 py-3 rounded-xl border-2 border-transparent bg-gradient-to-r from-cyan-400 to-purple-500 text-white shadow-lg hover:scale-105 transition">View My Work</a>
           <a href="#contact" className="px-6 py-3 rounded-xl glass text-white border border-white/6">Contact Me</a>
         </motion.div>
